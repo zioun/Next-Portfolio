@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function Navbar() {
-  // const pathName = usePathname();
+  const pathName = usePathname();
+
+  const isCurrentPath = (path) => pathName === path;
+
   return (
     <div className="z-20">
       <div className="">
@@ -12,18 +16,24 @@ export default function Navbar() {
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-10">
-              <li className="text-[#0CC880]">
-                <Link href={"/"}><span>Home</span></Link>
+              <li className={isCurrentPath("/") ? "text-[#0CC880]" : "text-gray-400"}>
+                <Link href="/">
+                  <span>Home</span>
+                </Link>
               </li>
-              <li className="text-[#0CC880]">
-              <Link href={"/projects"}><span>Projects</span></Link>
+              <li className={isCurrentPath("/projects") ? "text-[#0CC880]" : "text-gray-400"}>
+                <Link href="/projects">
+                  <span>Projects</span>
+                </Link>
               </li>
-              <li className="text-[#0CC880]">
-              <Link href={"/contact"}><span>Contact</span></Link>
+              <li className={isCurrentPath("/contact") ? "text-[#0CC880]" : "text-gray-400"}>
+                <Link href="/contact">
+                  <span>Contact</span>
+                </Link>
               </li>
             </ul>
           </div>
-          
+
           <div className="flex justify-center items-center gap-2 cursor-pointer py-1 rounded-lg ">
             <a href="resume/resume.pdf" download>
               <button className="font-bold border border-[#0CC880] rounded-full px-5 text-[#0CC880] py-1">

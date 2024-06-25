@@ -58,8 +58,11 @@ export default function page() {
         },
       );
   };
+  const pageTitle = "Contact | Zioun";
 
   return (
+    <>
+    <title>{pageTitle}</title>
     <main className="bg-[#12191B] relative overflow-hidden min-h-screen px-3">
       <Toaster />
       {loading && (
@@ -273,5 +276,6 @@ export default function page() {
         />
       </animated.div>
     </main>
+    </>
   );
 }
