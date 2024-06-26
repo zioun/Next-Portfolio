@@ -50,7 +50,7 @@ export default function Contact() {
         () => {
           console.log('SUCCESS!');
           e.target.reset();
-          return toast.success("Your message has been sent successfully. We will contact you very soon ");
+          return toast.success("Your message has been sent successfully.");
         },
         (error) => {
           console.log('FAILED...', error.text);
