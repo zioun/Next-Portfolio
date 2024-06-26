@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faExpand } from "@fortawesome/free-brands-svg-icons";
 import BottomNav from "@/components/BottomNav";
 
-export default function page() {
+export default function Projects() {
   const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(1);
 

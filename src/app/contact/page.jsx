@@ -15,7 +15,7 @@ import BottomNav from "@/components/BottomNav";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function page() {
+export default function Contact() {
   const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(1);
 
