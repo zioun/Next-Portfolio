@@ -78,7 +78,7 @@ export default function Projects() {
                     <div className="flex justify-center p-5">
                       <img
                         className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
+                        src="https://i.ibb.co/7krXWmB/Untitled-design-2.png"
                         alt=""
                       />
                     </div>
@@ -91,10 +91,10 @@ export default function Projects() {
                           <h1 className="text-[20px] font-semibold">Barta</h1>
                         </div>
                         <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun" target="blank">
                             <FontAwesomeIcon icon={faGithub} />
                           </a>
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://forum-b54c7.web.app/" target="blank">
                             <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
                           </a>
                         </div>
@@ -109,7 +109,7 @@ export default function Projects() {
                     <div className="flex justify-center p-5">
                       <img
                         className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
+                        src="https://i.ibb.co/nCBkBRb/Untitled-design-3.png"
                         alt=""
                       />
                     </div>
@@ -122,10 +122,10 @@ export default function Projects() {
                           <h1 className="text-[20px] font-semibold">Barta</h1>
                         </div>
                         <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://github.com/Porgramming-Hero-web-course/b9a11-client-side-Zioun" target="blank">
                             <FontAwesomeIcon icon={faGithub} />
                           </a>
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://volunteer-e5e10.web.app/" target="blank">
                             <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
                           </a>
                         </div>
@@ -140,7 +140,7 @@ export default function Projects() {
                     <div className="flex justify-center p-5">
                       <img
                         className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
+                        src="https://i.ibb.co/sPWfwKd/Untitled-design-4.png"
                         alt=""
                       />
                     </div>
@@ -153,10 +153,10 @@ export default function Projects() {
                           <h1 className="text-[20px] font-semibold">Barta</h1>
                         </div>
                         <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://github.com/Zioun/B9A10-Client-Side-Zioun" target="blank">
                             <FontAwesomeIcon icon={faGithub} />
                           </a>
-                          <a className="text-[30px]" href="#">
+                          <a className="text-[30px]" href="https://assignment-10-a2856.web.app/" target="blank">
                             <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
                           </a>
                         </div>
@@ -165,99 +165,7 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center p-5">
-                      <img
-                        className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center px-5 pb-5">
-                        <div className="">
-                          <h2 className="text-[#909090] text-[16px] font-semibold">
-                            Forum Site
-                          </h2>
-                          <h1 className="text-[20px] font-semibold">Barta</h1>
-                        </div>
-                        <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
-                            <FontAwesomeIcon icon={faGithub} />
-                          </a>
-                          <a className="text-[30px]" href="#">
-                            <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center p-5">
-                      <img
-                        className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center px-5 pb-5">
-                        <div className="">
-                          <h2 className="text-[#909090] text-[16px] font-semibold">
-                            Forum Site
-                          </h2>
-                          <h1 className="text-[20px] font-semibold">Barta</h1>
-                        </div>
-                        <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
-                            <FontAwesomeIcon icon={faGithub} />
-                          </a>
-                          <a className="text-[30px]" href="#">
-                            <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                <div className="">
-                  <div>
-                    <div className="flex justify-center p-5">
-                      <img
-                        className="h-[200px] w-full z-10 object-cover rounded-lg"
-                        src="https://i.pinimg.com/736x/2c/d9/4b/2cd94b95987a0979fa0093aa1743f0f4.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-between items-center px-5 pb-5">
-                        <div className="">
-                          <h2 className="text-[#909090] text-[16px] font-semibold">
-                            Forum Site
-                          </h2>
-                          <h1 className="text-[20px] font-semibold">Barta</h1>
-                        </div>
-                        <div className="flex gap-5 justify-center items-center">
-                          <a className="text-[30px]" href="#">
-                            <FontAwesomeIcon icon={faGithub} />
-                          </a>
-                          <a className="text-[30px]" href="#">
-                            <img className="h-[27px]" src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png" alt="" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div className="">
               <Footer></Footer>
