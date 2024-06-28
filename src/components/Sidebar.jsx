@@ -73,15 +73,8 @@ export default function Sidebar() {
             >
               <DialogContent dividers>
                 <Typography gutterBottom>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/l2ELaomj3_8?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&fs=1&cc_load_policy=0"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1sIZRJb2c?si=w5Fbi76Q1X7wSPLz&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </Typography>
               </DialogContent>
             </BootstrapDialog>
