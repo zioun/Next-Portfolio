@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCount((prevCount) => {
-        if (prevCount >= 100) {
+        if (prevCount >= 0) {
           clearInterval(timer);
           setLoading(false);
           return prevCount;

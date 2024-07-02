@@ -16,7 +16,7 @@ export default function Projects() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCount((prevCount) => {
-        if (prevCount >= 100) {
+        if (prevCount >= 0) {
           clearInterval(timer);
           setLoading(false);
           return prevCount;
@@ -38,14 +38,14 @@ export default function Projects() {
       <title>{pageTitle}</title>
 
     <main className="bg-[#12191B] relative overflow-hidden min-h-screen px-3">
-      {loading && (
+      {/* {loading && (
         <div className="fixed inset-0 flex items-center justify-center bg-[#12191B] z-50">
           <div className="text-center text-white">
             <RotatingSquare color="#0cc880" height={200} width={200} />
             <p className="mt-4 text-[#0CC880] text-2xl font-bold">{count}%</p>
           </div>
         </div>
-      )}
+      )} */}
       <AnimatedCursor
         innerSize={8}
         outerSize={8}
