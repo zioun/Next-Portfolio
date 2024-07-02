@@ -34,14 +34,14 @@ export default function Home() {
 
   return (
     <main className="bg-[#12191B] overflow-hidden min-h-screen relative px-3">
-      {loading && (
+      {/* {loading && (
         <div className="fixed inset-0 flex items-center justify-center bg-[#12191B] z-50">
           <div className="text-center text-white">
             <RotatingSquare color="#0cc880" height={200} width={200} />
             <p className="mt-4 text-[#0CC880] text-2xl font-bold">{count}%</p>
           </div>
         </div>
-      )}
+      )} */}
       <div className="absolute z-50">
         <AnimatedCursor
           innerSize={8}
