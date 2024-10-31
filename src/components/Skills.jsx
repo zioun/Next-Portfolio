@@ -145,6 +145,30 @@ export default function Skills() {
             </div>
           </div>
         </div>
+        <h1 className="text-[20px] mt-5 text-[#0CC880] font-semibold mb-5">
+        CMS Skill
+        </h1>
+        <div>
+        <div className="w-full flex justify-center items-center bg-[#0C372A] border rounded-lg border-[#0cc880a0] mt-5">
+            <div className="flex justify-center items-center">
+              <div className="flex p-5 gap-3">
+                <div className="flex">
+                  <img
+                    className="h-[45px]"
+                    src="https://i.ibb.co.com/RT1Zj5y/shopify-logo-png-transparent.png"
+                    alt=""
+                  />
+                </div>
+                <div className="">
+                  <h1 className="text-[#979797] font-semibold">Expert</h1>
+                  <p className="text-[#CFCFCF] font-semibold text-[14px]">
+                    Shopify
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div> 
   );
