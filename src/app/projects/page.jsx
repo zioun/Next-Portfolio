@@ -72,7 +72,7 @@ export default function Projects() {
               <Navbar />
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-10">
                 <div
-                  title="password: sheuse"
+                  title="password: lahied"
                   className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20"
                 >
                   <div className="relative">
@@ -102,14 +102,14 @@ export default function Projects() {
                           <div className="flex gap-5 justify-center items-center">
                             <a
                               className="text-[30px]"
-                              href="https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun"
+                              href="https://github.com/zioun/Magno-Grip"
                               target="blank"
                             >
                               <FontAwesomeIcon icon={faGithub} />
                             </a>
                             <a
                               className="text-[30px]"
-                              href="https://forum-b54c7.web.app/"
+                              href="https://magno-grip.myshopify.com/"
                               target="blank"
                             >
                               <img
@@ -162,7 +162,7 @@ export default function Projects() {
                             </a>
                             <a
                               className="text-[30px]"
-                              href="https://forum-b54c7.web.app/"
+                              href="https://oxedent-91.myshopify.com/"
                               target="blank"
                             >
                               <img
