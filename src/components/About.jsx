@@ -55,7 +55,7 @@ export default function About() {
           {words.map((word, index) => (
             <span
               key={index}
-              className={highlightIndex === index ? '#0CC880' : 'text-[#CFCFCF]'}
+              className={highlightIndex === index ? 'text-[#0CC880]' : 'text-[#CFCFCF]'}
             >
               {word}{' '}
             </span>
