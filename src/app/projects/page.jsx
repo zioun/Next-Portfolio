@@ -155,7 +155,7 @@ export default function Projects() {
                           <div className="flex gap-5 justify-center items-center">
                             <a
                               className="text-[30px]"
-                              href="https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun"
+                              href="https://github.com/zioun/Oxedent"
                               target="blank"
                             >
                               <FontAwesomeIcon icon={faGithub} />
