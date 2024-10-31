@@ -71,9 +71,120 @@ export default function Projects() {
             <div className="z-50">
               <Navbar />
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-10">
-                <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                  <div className="">
+                <div
+                  title="password: sheuse"
+                  className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20"
+                >
+                  <div className="relative">
                     <div>
+                      <img
+                        className="absolute w-32 -mb-5 opacity-15 -z-0 left-0 bottom-0"
+                        src="https://i.ibb.co.com/C94s7Ck/shopping-512.png"
+                        alt=""
+                      />
+                      <div className="flex justify-center p-5">
+                        <img
+                          className="h-[200px] w-full z-10 object-cover rounded-lg"
+                          src="https://i.ibb.co.com/hcSfZR5/Screenshot-26.png"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <div className="flex justify-between items-center px-5 pb-5">
+                          <div className="z-10">
+                            <h2 className="text-[#909090] text-[16px] font-semibold">
+                              E Commerce
+                            </h2>
+                            <h1 className="text-[20px] font-semibold">
+                              New Holland
+                            </h1>
+                          </div>
+                          <div className="flex gap-5 justify-center items-center">
+                            <a
+                              className="text-[30px]"
+                              href="https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun"
+                              target="blank"
+                            >
+                              <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                            <a
+                              className="text-[30px]"
+                              href="https://forum-b54c7.web.app/"
+                              target="blank"
+                            >
+                              <img
+                                className="h-[27px]"
+                                src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  title="password: sheuse"
+                  className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20"
+                >
+                  <div className="relative">
+                    <div>
+                      <img
+                        className="absolute w-32 -mb-5 opacity-15 -z-0 left-0 bottom-0"
+                        src="https://i.ibb.co.com/C94s7Ck/shopping-512.png"
+                        alt=""
+                      />
+                      <div className="flex justify-center p-5">
+                        <img
+                          className="h-[200px] w-full z-10 object-cover rounded-lg"
+                          src="https://i.ibb.co.com/LQqbsd3/Screenshot-25.png"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <div className="flex justify-between items-center px-5 pb-5">
+                          <div className="z-10">
+                            <h2 className="text-[#909090] text-[16px] font-semibold">
+                              Landing Page
+                            </h2>
+                            <h1 className="text-[20px] font-semibold">
+                              Oxedent
+                            </h1>
+                          </div>
+                          <div className="flex gap-5 justify-center items-center">
+                            <a
+                              className="text-[30px]"
+                              href="https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun"
+                              target="blank"
+                            >
+                              <FontAwesomeIcon icon={faGithub} />
+                            </a>
+                            <a
+                              className="text-[30px]"
+                              href="https://forum-b54c7.web.app/"
+                              target="blank"
+                            >
+                              <img
+                                className="h-[27px]"
+                                src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
+                  <div className="relative">
+                    <div>
+                      <img
+                        className="absolute w-32 -mb-5 opacity-15 -z-0 left-0 bottom-0"
+                        src="https://i.ibb.co.com/K67cLy5/React.png"
+                        alt=""
+                      />
                       <div className="flex justify-center p-5">
                         <img
                           className="h-[200px] w-full z-10 object-cover rounded-lg"
@@ -83,7 +194,7 @@ export default function Projects() {
                       </div>
                       <div>
                         <div className="flex justify-between items-center px-5 pb-5">
-                          <div className="">
+                          <div className="z-10">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
                               Forum
                             </h2>
@@ -115,8 +226,13 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                  <div className="">
+                  <div className="relative">
                     <div>
+                      <img
+                        className="absolute w-32 -mb-5 opacity-15 -z-0 left-0 bottom-0"
+                        src="https://i.ibb.co.com/K67cLy5/React.png"
+                        alt=""
+                      />
                       <div className="flex justify-center p-5">
                         <img
                           className="h-[200px] w-full z-10 object-cover rounded-lg"
@@ -128,9 +244,11 @@ export default function Projects() {
                         <div className="flex justify-between items-center px-5 pb-5">
                           <div className="">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
-                            Volunteer
+                              Volunteer
                             </h2>
-                            <h1 className="text-[20px] font-semibold">AidAlliance</h1>
+                            <h1 className="text-[20px] font-semibold">
+                              AidAlliance
+                            </h1>
                           </div>
                           <div className="flex gap-5 justify-center items-center">
                             <a
@@ -158,8 +276,13 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                  <div className="">
+                  <div className="relative">
                     <div>
+                      <img
+                        className="absolute w-32 -mb-5 opacity-15 -z-0 left-0 bottom-0"
+                        src="https://i.ibb.co.com/K67cLy5/React.png"
+                        alt=""
+                      />
                       <div className="flex justify-center p-5">
                         <img
                           className="h-[200px] w-full z-10 object-cover rounded-lg"
@@ -171,52 +294,9 @@ export default function Projects() {
                         <div className="flex justify-between items-center px-5 pb-5">
                           <div className="">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
-                            Art and Craft
+                              Art and Craft
                             </h2>
                             <h1 className="text-[20px] font-semibold">Ranga</h1>
-                          </div>
-                          <div className="flex gap-5 justify-center items-center">
-                            <a
-                              className="text-[30px]"
-                              href="https://github.com/Zioun/B9A10-Client-Side-Zioun"
-                              target="blank"
-                            >
-                              <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                            <a
-                              className="text-[30px]"
-                              href="https://assignment-10-a2856.web.app/"
-                              target="blank"
-                            >
-                              <img
-                                className="h-[27px]"
-                                src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png"
-                                alt=""
-                              />
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026] text-white rounded-lg overflow-hidden z-20">
-                  <div className="">
-                    <div>
-                      <div className="flex justify-center p-5">
-                        <img
-                          className="h-[200px] w-full z-10 object-cover rounded-lg"
-                          src="https://i.ibb.co/sPWfwKd/Untitled-design-4.png"
-                          alt=""
-                        />
-                      </div>
-                      <div>
-                        <div className="flex justify-between items-center px-5 pb-5">
-                          <div className="">
-                            <h2 className="text-[#909090] text-[16px] font-semibold">
-                              Forum Site
-                            </h2>
-                            <h1 className="text-[20px] font-semibold">Barta</h1>
                           </div>
                           <div className="flex gap-5 justify-center items-center">
                             <a
