@@ -123,6 +123,8 @@ export default function Sidebar() {
                   1000,
                   "I am Junior MERN Developer",
                   1000,
+                  "I am Shopify Developer",
+                  1000,
                 ]}
                 wrapper="span"
                 speed={50}
