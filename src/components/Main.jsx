@@ -4,6 +4,7 @@ import Skills from './Skills'
 import Education from './Education'
 import Certification from './Certification'
 
+
 export default function Main() {
   return (
     <div>
