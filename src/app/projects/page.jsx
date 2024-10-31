@@ -85,7 +85,7 @@ export default function Projects() {
                         <div className="flex justify-between items-center px-5 pb-5">
                           <div className="">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
-                              Forum Site
+                              Forum
                             </h2>
                             <h1 className="text-[20px] font-semibold">Barta</h1>
                           </div>
@@ -128,9 +128,9 @@ export default function Projects() {
                         <div className="flex justify-between items-center px-5 pb-5">
                           <div className="">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
-                              Forum Site
+                            Volunteer
                             </h2>
-                            <h1 className="text-[20px] font-semibold">Barta</h1>
+                            <h1 className="text-[20px] font-semibold">AidAlliance</h1>
                           </div>
                           <div className="flex gap-5 justify-center items-center">
                             <a
@@ -171,9 +171,9 @@ export default function Projects() {
                         <div className="flex justify-between items-center px-5 pb-5">
                           <div className="">
                             <h2 className="text-[#909090] text-[16px] font-semibold">
-                              Forum Site
+                            Art and Craft
                             </h2>
-                            <h1 className="text-[20px] font-semibold">Barta</h1>
+                            <h1 className="text-[20px] font-semibold">Ranga</h1>
                           </div>
                           <div className="flex gap-5 justify-center items-center">
                             <a
