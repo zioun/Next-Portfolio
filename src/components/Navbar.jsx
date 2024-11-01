@@ -12,7 +12,8 @@ export default function Navbar() {
       <div className="">
         <nav className="flex justify-between items-center rounded-lg px-5 lg:px-10 py-3 lg:py-5 bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] border border-[#0D3026]">
           <div>
-            <h1 className="text-[#FFFFFF] text-[25px] font-semibold">Zioun</h1>
+            <img className="w-10" src="https://i.ibb.co.com/jGWVY81/z-1-removebg-preview.png" alt="" />
+            <h1 className="text-[#FFFFFF] text-[25px] font-semibold"></h1>
           </div>
           <div className="hidden md:block">
             <ul className="flex gap-10">
