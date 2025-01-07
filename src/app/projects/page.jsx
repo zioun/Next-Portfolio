@@ -11,16 +11,18 @@ import { faKey } from "@fortawesome/free-solid-svg-icons";
 export default function Projects() {
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState("all"); // State to manage the filter
-  
-  const [tooltip, setTooltip] = useState("Copy Key"); // Tooltip text
-  const keyToCopy = "YourKeyHere"; // Replace with your actual data to copy
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(keyToCopy).then(() => {
+  const [tooltip, setTooltip] = useState(""); // Tooltip text
+
+  const [tooltipVisibleId, setTooltipVisibleId] = useState(null); // Track which card's tooltip is visible
+
+  const handleCopy = (password) => {
+    navigator.clipboard.writeText(password).then(() => {
       setTooltip("Copied!"); // Change tooltip text after copying
-      setTimeout(() => setTooltip("Copy Key"), 2000); // Reset tooltip after 2 seconds
+      setTimeout(() => setTooltip(""), 2000); // Reset tooltip after 2 seconds
     });
   };
+
   const projects = [
     {
       id: 1,
@@ -38,14 +40,15 @@ export default function Projects() {
       img: "https://i.ibb.co/LQqbsd3/Screenshot-25.png",
       github: "https://github.com/zioun/Oxedent",
       live: "https://oxedent-91.myshopify.com/",
-      password: "12345678",
+      password: "87654321",
     },
     {
       id: 3,
       title: "Barta",
       type: "react",
       img: "https://i.ibb.co/7krXWmB/Untitled-design-2.png",
-      github: "https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun",
+      github:
+        "https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun",
       live: "https://forum-b54c7.web.app/",
     },
     {
@@ -53,7 +56,8 @@ export default function Projects() {
       title: "AidAlliance",
       type: "react",
       img: "https://i.ibb.co/nCBkBRb/Untitled-design-3.png",
-      github: "https://github.com/Porgramming-Hero-web-course/b9a11-client-side-Zioun",
+      github:
+        "https://github.com/Porgramming-Hero-web-course/b9a11-client-side-Zioun",
       live: "https://volunteer-e5e10.web.app/",
     },
   ];
@@ -66,7 +70,9 @@ export default function Projects() {
   }, []);
 
   const filteredProjects =
-    filter === "all" ? projects : projects.filter((project) => project.type === filter);
+    filter === "all"
+      ? projects
+      : projects.filter((project) => project.type === filter);
 
   return (
     <>
@@ -136,25 +142,27 @@ export default function Projects() {
                           <h2 className="text-[#909090] text-[16px] font-semibold">
                             {project.type.toUpperCase()}
                           </h2>
-                          <h1 className="text-[20px] font-semibold">{project.title}</h1>
+                          <h1 className="text-[20px] font-semibold">
+                            {project.title}
+                          </h1>
                         </div>
                         <div className="flex gap-5">
-                        {project.type === "shopify" && (
-        <a
-          className="relative text-[30px]"
-          href="https://volunteer-e5e10.web.app/login"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleCopy}
-          onMouseEnter={() => setTooltip("Copy Key")} // Reset tooltip on hover
-        >
-          <FontAwesomeIcon icon={faKey} />
-          {/* Tooltip */}
-          <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-0 hover:opacity-100 transition-opacity">
-            {tooltip}
-          </span>
-        </a>
-      )}
+                          {project.type === "shopify" && (
+                            <a
+                              className="relative text-[30px] cursor-pointer"
+                              onClick={() => handleCopy(project.password)} // Pass project-specific password
+                              onMouseEnter={() => setTooltipVisibleId(project.id)} // Show tooltip for the current card
+                              onMouseLeave={() => setTooltipVisibleId(null)} // Hide tooltip when hover ends
+                            >
+                              <FontAwesomeIcon icon={faKey} />
+                              {/* Tooltip */}
+                              {tooltipVisibleId === project.id && ( // Show tooltip only for the hovered card
+                                <span className="absolute bottom-full -mt-10 w-[120px] left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-100 transition-opacity">
+                                  {tooltip || "Copy Password"} {/* Default tooltip */}
+                                </span>
+                              )}
+                            </a>
+                          )}
                           <a
                             className="text-[30px]"
                             href={project.github}
