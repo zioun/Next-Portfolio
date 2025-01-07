@@ -11,77 +11,34 @@ import BottomNav from "@/components/BottomNav";
 
 export default function Projects() {
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState("all"); // State to manage the filter
-
-  const [tooltip, setTooltip] = useState(""); // Tooltip text
-
-  const [tooltipVisibleId, setTooltipVisibleId] = useState(null); // Track which card's tooltip is visible
+  const [filter, setFilter] = useState("all");
+  const [tooltip, setTooltip] = useState("");
+  const [tooltipVisibleId, setTooltipVisibleId] = useState(null);
+  const [projects, setProjects] = useState([]); // State to store projects
 
   const handleCopy = (password) => {
     navigator.clipboard.writeText(password).then(() => {
-      setTooltip("Copied!"); // Change tooltip text after copying
-      setTimeout(() => setTooltip(""), 2000); // Reset tooltip after 2 seconds
+      setTooltip("Copied!");
+      setTimeout(() => setTooltip(""), 2000);
     });
   };
 
-  const projects = [
-    {
-      id: 1,
-      title: "New Holland",
-      type: "shopify",
-      img: "https://i.ibb.co/hcSfZR5/Screenshot-26.png",
-      github: "https://github.com/zioun/Magno-Grip",
-      live: "https://magno-grip.myshopify.com/",
-      password: "12345678",
-    },
-    {
-      id: 2,
-      title: "Oxedent",
-      type: "shopify",
-      img: "https://i.ibb.co/LQqbsd3/Screenshot-25.png",
-      github: "https://github.com/zioun/Oxedent",
-      live: "https://oxedent-91.myshopify.com/",
-      password: "87654321",
-    },
-    {
-      id: 3,
-      title: "Barta",
-      type: "react",
-      img: "https://i.ibb.co/7krXWmB/Untitled-design-2.png",
-      github: "https://github.com/zioun/Aid-Alliance",
-      live: "https://volunteer-e5e10.web.app/",
-      github: "https://github.com/zioun/Forum",
-      live: "https://forum-b54c7.web.app/",
-    },
-    {
-      id: 4,
-      title: "AidAlliance",
-      type: "react",
-      img: "https://i.ibb.co/nCBkBRb/Untitled-design-3.png",
-      github: "https://github.com/zioun/Aid-Alliance",
-      live: "https://volunteer-e5e10.web.app/",
-    },
-    {
-      id: 5,
-      title: "Ranga",
-      type: "react",
-      img: "https://i.ibb.co.com/sPWfwKd/Untitled-design-4.png",
-      github: "https://github.com/zioun/Ranga",
-      live: "https://assignment-10-a2856.web.app/",
-    },
-  ];
-
+  // Fetch the projects from the JSON file
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); // Simulate loading time
-    return () => clearTimeout(timer);
+    fetch("/projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setProjects(data); // Store the fetched data in state
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching projects:", error);
+        setLoading(false);
+      });
   }, []);
 
   const filteredProjects =
-    filter === "all"
-      ? projects
-      : projects.filter((project) => project.type === filter);
+    filter === "all" ? projects : projects.filter((project) => project.type === filter);
 
   return (
     <>
@@ -161,42 +118,28 @@ export default function Projects() {
                           <h2 className="text-[#909090] text-[16px] font-semibold">
                             {project.type.toUpperCase()}
                           </h2>
-                          <h1 className="text-[20px] font-semibold">
-                            {project.title}
-                          </h1>
+                          <h1 className="text-[20px] font-semibold">{project.title}</h1>
                         </div>
                         <div className="flex gap-5">
                           {project.type === "shopify" && (
                             <a
                               className="relative text-[30px] cursor-pointer"
-                              onClick={() => handleCopy(project.password)} // Pass project-specific password
-                              onMouseEnter={() =>
-                                setTooltipVisibleId(project.id)
-                              } // Show tooltip for the current card
-                              onMouseLeave={() => setTooltipVisibleId(null)} // Hide tooltip when hover ends
+                              onClick={() => handleCopy(project.password)}
+                              onMouseEnter={() => setTooltipVisibleId(project.id)}
+                              onMouseLeave={() => setTooltipVisibleId(null)}
                             >
                               <FontAwesomeIcon icon={faKey} />
-                              {/* Tooltip */}
-                              {tooltipVisibleId === project.id && ( // Show tooltip only for the hovered card
+                              {tooltipVisibleId === project.id && (
                                 <span className="absolute bottom-full -mt-10 w-[120px] left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-100 transition-opacity">
-                                  {tooltip || "Copy Password"}{" "}
-                                  {/* Default tooltip */}
+                                  {tooltip || "Copy Password"}
                                 </span>
                               )}
                             </a>
                           )}
-                          <a
-                            className="text-[30px]"
-                            href={project.github}
-                            target="blank"
-                          >
+                          <a className="text-[30px]" href={project.github} target="blank">
                             <FontAwesomeIcon icon={faGithub} />
                           </a>
-                          <a
-                            className="text-[30px]"
-                            href={project.live}
-                            target="blank"
-                          >
+                          <a className="text-[30px]" href={project.live} target="blank">
                             <img
                               className="h-[27px] mt-[7px]"
                               src="https://i.ibb.co/JB1pg7S/expand-removebg-preview.png"
@@ -211,13 +154,12 @@ export default function Projects() {
               ))}
             </div>
             <div className="">
-            <Footer></Footer>
-            <div className="z-50 absolute">
-              <BottomNav></BottomNav>
+              <Footer />
+              <div className="z-50 absolute">
+                <BottomNav />
+              </div>
             </div>
           </div>
-          </div>
-          
         </animated.div>
       </main>
     </>
