@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
+import BottomNav from "@/components/BottomNav";
 
 export default function Projects() {
   const [loading, setLoading] = useState(true);
@@ -47,8 +48,9 @@ export default function Projects() {
       title: "Barta",
       type: "react",
       img: "https://i.ibb.co/7krXWmB/Untitled-design-2.png",
-      github:
-        "https://github.com/programming-hero-web-course1/b9a12-client-side-Zioun",
+      github: "https://github.com/zioun/Aid-Alliance",
+      live: "https://volunteer-e5e10.web.app/",
+      github: "https://github.com/zioun/Forum",
       live: "https://forum-b54c7.web.app/",
     },
     {
@@ -56,9 +58,16 @@ export default function Projects() {
       title: "AidAlliance",
       type: "react",
       img: "https://i.ibb.co/nCBkBRb/Untitled-design-3.png",
-      github:
-        "https://github.com/Porgramming-Hero-web-course/b9a11-client-side-Zioun",
+      github: "https://github.com/zioun/Aid-Alliance",
       live: "https://volunteer-e5e10.web.app/",
+    },
+    {
+      id: 5,
+      title: "Ranga",
+      type: "react",
+      img: "https://i.ibb.co.com/sPWfwKd/Untitled-design-4.png",
+      github: "https://github.com/zioun/Ranga",
+      live: "https://assignment-10-a2856.web.app/",
     },
   ];
 
@@ -90,10 +99,30 @@ export default function Projects() {
         <animated.div>
           <div className="max-w-[1150px] m-auto py-2 z-20 relative">
             <Navbar />
-            <div className="text-center mt-5 flex justify-center items-center gap-5">
+            <div className="text-center mt-5 flex flex-wrap justify-center items-center gap-5">
+              <button
+                onClick={() => setFilter("all")}
+                className={`w-[150px] pt-3 pb-3 ${
+                  filter === "all"
+                    ? "bg-[#0CC880] text-white"
+                    : "bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] text-[#0CC880]"
+                } border border-[#0D3026] rounded-lg`}
+              >
+                All
+              </button>
+              <button
+                onClick={() => setFilter("javascript")}
+                className={`w-[150px] pt-3 pb-3 ${
+                  filter === "javascript"
+                    ? "bg-[#0CC880] text-white"
+                    : "bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] text-[#0CC880]"
+                } border border-[#0D3026] rounded-lg`}
+              >
+                Javascript
+              </button>
               <button
                 onClick={() => setFilter("react")}
-                className={`w-[100px] pt-3 pb-3 ${
+                className={`w-[150px] pt-3 pb-3 ${
                   filter === "react"
                     ? "bg-[#0CC880] text-white"
                     : "bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] text-[#0CC880]"
@@ -103,23 +132,13 @@ export default function Projects() {
               </button>
               <button
                 onClick={() => setFilter("shopify")}
-                className={`w-[100px] pt-3 pb-3 ${
+                className={`w-[150px] pt-3 pb-3 ${
                   filter === "shopify"
                     ? "bg-[#0CC880] text-white"
                     : "bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] text-[#0CC880]"
                 } border border-[#0D3026] rounded-lg`}
               >
                 Shopify
-              </button>
-              <button
-                onClick={() => setFilter("all")}
-                className={`w-[100px] pt-3 pb-3 ${
-                  filter === "all"
-                    ? "bg-[#0CC880] text-white"
-                    : "bg-gradient-to-r from-[rgba(18,25,27,1)] to-[rgba(12,56,42,1)] text-[#0CC880]"
-                } border border-[#0D3026] rounded-lg`}
-              >
-                All
               </button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 lg:mt-10">
@@ -151,14 +170,17 @@ export default function Projects() {
                             <a
                               className="relative text-[30px] cursor-pointer"
                               onClick={() => handleCopy(project.password)} // Pass project-specific password
-                              onMouseEnter={() => setTooltipVisibleId(project.id)} // Show tooltip for the current card
+                              onMouseEnter={() =>
+                                setTooltipVisibleId(project.id)
+                              } // Show tooltip for the current card
                               onMouseLeave={() => setTooltipVisibleId(null)} // Hide tooltip when hover ends
                             >
                               <FontAwesomeIcon icon={faKey} />
                               {/* Tooltip */}
                               {tooltipVisibleId === project.id && ( // Show tooltip only for the hovered card
                                 <span className="absolute bottom-full -mt-10 w-[120px] left-1/2 transform -translate-x-1/2 px-2 py-1 text-sm text-white bg-gray-700 rounded opacity-100 transition-opacity">
-                                  {tooltip || "Copy Password"} {/* Default tooltip */}
+                                  {tooltip || "Copy Password"}{" "}
+                                  {/* Default tooltip */}
                                 </span>
                               )}
                             </a>
@@ -188,9 +210,15 @@ export default function Projects() {
                 </div>
               ))}
             </div>
+            <div className="">
+            <Footer></Footer>
+            <div className="z-50 absolute">
+              <BottomNav></BottomNav>
+            </div>
           </div>
+          </div>
+          
         </animated.div>
-        <Footer />
       </main>
     </>
   );
