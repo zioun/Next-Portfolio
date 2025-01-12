@@ -13,6 +13,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          'custom-radial': 'radial-gradient(circle, rgba(12,200,128,0.7875525210084033) 0%, rgba(0,0,0,0) 100%)',
       },
     },
   },

@@ -66,7 +66,7 @@ export default function Home() {
         />
       </div>
       <animated.div style={props}>
-        <div className="max-w-[1150px] m-auto py-2 z-20 relative">
+        <div className="max-w-[1150px] m-auto py-2 z-20 relative"> 
           <div className="z-50">
             <Navbar />
             <div>

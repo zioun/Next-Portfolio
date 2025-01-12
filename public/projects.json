@@ -1,6 +1,15 @@
 [
-    {
-      "id": 1,
+  {
+    "id": 1,
+    "title": "mezam",
+    "type": "shopify",
+    "img": "https://i.ibb.co.com/1T4QTYW/Screenshot-2.png",
+    "github": "",
+    "live": "https://mezam.dk/",
+    "password": "12345678"
+  },  
+  {
+      "id": 2,
       "title": "New Holland",
       "type": "shopify",
       "img": "https://i.ibb.co/hcSfZR5/Screenshot-26.png",
@@ -9,16 +18,16 @@
       "password": "12345678"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Oxedent",
       "type": "shopify",
       "img": "https://i.ibb.co/LQqbsd3/Screenshot-25.png",
       "github": "https://github.com/zioun/Oxedent",
       "live": "https://oxedent-91.myshopify.com/",
-      "password": "87654321"
+      "password": "12345678"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Barta",
       "type": "react",
       "img": "https://i.ibb.co/7krXWmB/Untitled-design-2.png",
@@ -26,7 +35,7 @@
       "live": "https://forum-b54c7.web.app/"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "AidAlliance",
       "type": "react",
       "img": "https://i.ibb.co/nCBkBRb/Untitled-design-3.png",
@@ -34,7 +43,7 @@
       "live": "https://volunteer-e5e10.web.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Ranga",
       "type": "react",
       "img": "https://i.ibb.co.com/8c8Lwkp/projects.png",
@@ -42,7 +51,7 @@
       "live": "https://assignment-10-a2856.web.app/"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Scroll Animation",
       "type": "javascript",
       "img": "https://i.ibb.co.com/8s6b7GF/Screenshot-4.png",
